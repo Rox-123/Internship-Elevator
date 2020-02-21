@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+	<title>Elevator challenge</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+	<div class="flex-container">
+
+		<div class="container-1">
+			
+			<h3>Call elevator: </h3>
+			<button class="callbtn" type="button" onclick="chooseElevator(6)">6</button>
+			<button class="callbtn" type="button" onclick="chooseElevator(5)">5</button>
+			<button class="callbtn" type="button" onclick="chooseElevator(4)">4</button> 
+			<button class="callbtn" type="button" onclick="chooseElevator(3)">3</button> 
+			<button class="callbtn" type="button" onclick="chooseElevator(2)">2</button> 
+			<button class="callbtn" type="button" onclick="chooseElevator(1)">1</button> 
+			<button class="callbtn" type="button" onclick="chooseElevator(0)">0</button> 
+		</div>
+
+		<div class="container-2">
+
+			<h3> Elevator A </h3>
+			<div class="flex-column">
+				<div class="elevatorABox elevator-box">0</div>
+				<div class="elevatorABox elevator-box">1</div>
+				<div class="elevatorABox elevator-box">2</div>
+				<div class="elevatorABox elevator-box">3</div>
+				<div class="elevatorABox elevator-box">4</div>
+				<div class="elevatorABox elevator-box">5</div>
+				<div class="elevatorABox elevator-box">6</div>
+
+		</div>
+
+		<h4>Elevator A buttons: </h4>
+		<div class="elevator-buttons">
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,0)">0</button>
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,1)">1</button>
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,2)">2</button>
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,3)">3</button>
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,4)">4</button>
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,5)">5</button>
+			<button class="elevatorAfloor" type="button" onclick="selectDestination(elevatorA,6)">6</button>
+		</div>
+		</div>
+
+		<div class="container-2">
+
+			<h3> Elevator B </h3>
+			<div class="flex-column">
+				<div class="elevatorBBox elevator-box">0</div>
+				<div class="elevatorBBox elevator-box">1</div>
+				<div class="elevatorBBox elevator-box">2</div>
+				<div class="elevatorBBox elevator-box">3</div>
+				<div class="elevatorBBox elevator-box">4</div>
+				<div class="elevatorBBox elevator-box">5</div>
+				<div class="elevatorBBox elevator-box">6</div>		
+		    </div>
+
+		<h4>Elevator B buttons: </h4>
+		<div class="elevator-buttons">
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,0)">0</button>
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,1)">1</button>
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,2)">2</button>
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,3)">3</button>
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,4)">4</button>
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,5)">5</button>
+			<button class="elevatorBfloor" type="button" onclick="selectDestination(elevatorB,6)">6</button>
+		</div>
+		</div>
+
+		<div class="container-3">
+			<h3>Elevator state: </h3>
+			<p class="elevatorAState"></p>
+			<p class="elevatorBState"></p>
+		</div>
+
+	</div>
+
+
+
+</body>
+
+<script type="text/javascript" src="javaScript.js"></script>
+
+</html>
